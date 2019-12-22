@@ -1,0 +1,6 @@
+.vscode
+.idea
+
+node_modules
+routes/mysql/sqlConfig.js
+routes/postgres/postgresConfig.js
