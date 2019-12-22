@@ -1,5 +1,7 @@
 [Docs](https://artillery.io/docs/script-reference/)
 
+Run with:
+    artillery run test1.yml
 -----------------------------------------------------------------------------------------------------
 
 
