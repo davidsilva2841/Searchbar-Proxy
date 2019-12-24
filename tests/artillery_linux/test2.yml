@@ -1,0 +1,20 @@
+config:
+    target: 'http://localhost:80/proxy/postgres/'
+    phases:
+        - duration: 10
+          arrivalRate: 1000
+          rampTo: 1500
+          name: "1000 -> 1500"
+        - duration: 10
+          arrivalRate: 1500
+          rampTo: 2000
+          name: "1500 -> 2000"
+        - duration: 10
+          arrivalRate: 2000
+          rampTo: 3000
+          name: "2000 -> 3000"
+
+scenarios:
+    - flow:
+          - get:
+                url: "/test"

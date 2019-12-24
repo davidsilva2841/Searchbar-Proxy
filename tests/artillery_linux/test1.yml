@@ -1,0 +1,43 @@
+config:
+    target: 'http://localhost:3000/postgres/'
+    phases:
+        - duration: 10
+          arrivalRate: 100
+          rampTo: 200
+          name: "100 -> 200"
+        - duration: 10
+          arrivalRate: 200
+          rampTo: 300
+          name: "200 -> 300"
+        - duration: 10
+          arrivalRate: 300
+          rampTo: 400
+          name: "300 -> 400"
+        - duration: 10
+          arrivalRate: 400
+          rampTo: 500
+          name: "400 -> 500"
+        - duration: 10
+          arrivalRate: 500
+          rampTo: 600
+          name: "500 -> 600"
+        - duration: 10
+          arrivalRate: 600
+          rampTo: 700
+          name: "600 -> 700"
+        - duration: 10
+          arrivalRate: 700
+          rampTo: 800
+          name: "700 -> 800"
+        - duration: 10
+          arrivalRate: 800
+          rampTo: 900
+          name: "800 -> 900"
+        - duration: 10
+          arrivalRate: 900
+          rampTo: 1000
+          name: "900 -> 1000"
+scenarios:
+    - flow:
+          - get:
+                url: "/test"

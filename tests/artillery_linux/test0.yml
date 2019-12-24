@@ -1,0 +1,15 @@
+config:
+    target: 'http://localhost:3000/postgres/'
+    phases:
+        - duration: 10
+          arrivalRate: 10
+          rampTo: 100
+          name: "10 -> 100"
+        - duration: 10
+          arrivalRate: 100
+          rampTo: 200
+          name: "100 -> 200"
+scenarios:
+    - flow:
+          - get:
+                url: "/test"

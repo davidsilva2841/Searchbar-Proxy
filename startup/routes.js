@@ -7,6 +7,7 @@ module.exports = function(app) {
 
     // app.use('/mongodb', mongodb);
     // app.use('/mysql', mysql);
-    app.use('/postgres', postgres);
+    // app.use('/postgres', postgres);
+    app.use('/proxy/postgres', postgres);
 };
 
